@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Get Api Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Get Api Test</h1>
+<p>
+  Test duration: 6.358s
+</p>
+
+
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">org.rakuten.test.GetInventoryAPITest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="This method will if getInventory api contain baseSkus in query string">testForBaseSkus</span>
+      </td>
+  <td class="duration">
+    2.648s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">1</span><br />
+    
+            <div class="testOutput">
+                        Request Parameters : {shopURL=[shop-A], baseSkus=[product-baseSku-C, product-baseSku-B, product-baseSku-A], marketplaceIdentifier=[es]}<br />
+                                Actual Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-baseSku-C does not exist,longMessage=baseSku product-baseSku-C does not exist in the shopURL shop&nbsp; A of marketplace es]],products=[Products [baseSku=product-baseSku-A,variants=[Variants [sku=product-baseSku-A,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]], Products [baseSku=product-baseSku-B,variants=[Variants [sku=product-sku-B-1,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]], Variants [sku=product-sku-B-2,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]]],totalCount=2]<br />
+                                Expected Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-baseSku-C does not exist,longMessage=baseSku product-baseSku-C does not exist in the shopURL shop&nbsp; A of marketplace es]],products=[Products [baseSku=product-baseSku-A,variants=[Variants [sku=product-baseSku-A,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]], Products [baseSku=product-baseSku-B,variants=[Variants [sku=product-sku-B-1,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]], Variants [sku=product-sku-B-2,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]]],totalCount=2]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="This method will pass baseSku parameters for which productds do not exists">testForNonExistingProductsForBaseSkus</span>
+      </td>
+  <td class="duration">
+    0.186s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">4</span><br />
+    
+            <div class="testOutput">
+                        Request Parameters : {shopURL=[shop-A], baseSkus=[product-baseSku-Y, product-baseSku-X], marketplaceIdentifier=[es]}<br />
+                                Actual Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-baseSku-X and product-baseSku-Y does not exist,longMessage=baseSku product-baseSku-X and product-baseSku-Y does not exist in the shopURL shop&nbsp; A of marketplace es]],products=null,totalCount=0]<br />
+                                Expected Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-baseSku-X and product-baseSku-Y does not exist,longMessage=baseSku product-baseSku-X and product-baseSku-Y does not exist in the shopURL shop&nbsp; A of marketplace es]],products=null,totalCount=0]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="This method will pass skus parameters for which productds do not exists">testForNonExistingProductsForSkus</span>
+      </td>
+  <td class="duration">
+    0.195s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">5</span><br />
+    
+            <div class="testOutput">
+                        Request Parameters : {shopURL=[shop-A], skus=[product-sku-Y, product-sku-X], marketplaceIdentifier=[es]}<br />
+                                Actual Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-sku-X and product-sku-Y does not exist,longMessage=baseSku product-sku-X and product-sku-Y does not exist in the shopURL shop&nbsp; A of marketplace es]],products=null,totalCount=0]<br />
+                                Expected Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-sku-X and product-sku-Y does not exist,longMessage=baseSku product-sku-X and product-sku-Y does not exist in the shopURL shop&nbsp; A of marketplace es]],products=null,totalCount=0]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="This method will if getInventory api contain skus in query string">testForSkus</span>
+      </td>
+  <td class="duration">
+    0.176s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">2</span><br />
+    
+            <div class="testOutput">
+                        Request Parameters : {shopURL=[shop-A], skus=[product-Sku-A, product-Sku-B, product-Sku-C], marketplaceIdentifier=[es]}<br />
+                                Actual Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-baseSku-C does not exist,longMessage=baseSku product-baseSku-C does not exist in the shopURL shop&nbsp; A of marketplace es]],products=[Products [baseSku=product-baseSku-A,variants=[Variants [sku=sku-A,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]], Products [baseSku=product-baseSku-C,variants=[Variants [sku=sku-A,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]], Variants [sku=sku-B,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]]],totalCount=2]<br />
+                                Expected Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-baseSku-C does not exist,longMessage=baseSku product-baseSku-C does not exist in the shopURL shop&nbsp; A of marketplace es]],products=[Products [baseSku=product-baseSku-A,variants=[Variants [sku=sku-A,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]], Products [baseSku=product-baseSku-C,variants=[Variants [sku=sku-A,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]], Variants [sku=sku-B,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]]],totalCount=2]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="This method will pass parameters which make request invalid">testInvalidRequest</span>
+      </td>
+  <td class="duration">
+    0.133s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">3</span><br />
+    
+            <div class="testOutput">
+                        Request Parameters : {shopURL=[shop-A], baseSkus=[product-baseSku-C, product-baseSku-A], skus=[product-Sku-A, product-Sku-B, product-Sku-C], marketplaceIdentifier=[es]}<br />
+                                Actual Response : GetInventoryResponse [errors=[Errors [errorCode=801,shortMessage=baseSku and sku are not allowed,longMessage=both baseSku and sku are not allowed in request]],products=null,totalCount=0]<br />
+                                Expected Response : GetInventoryResponse [errors=[Errors [errorCode=801,shortMessage=baseSku and sku are not allowed,longMessage=both baseSku and sku are not allowed in request]],products=null,totalCount=0]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

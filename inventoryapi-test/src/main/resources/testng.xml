@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Inventory API Test Suite" parallel="false">
+	<test name="Get Api Test" parallel="false">
+		<classes>
+			<class name="org.rakuten.test.GetInventoryAPITest">
+			</class>
+		</classes>
+	</test>
+	<test name="Update API Test" parallel="false">
+		<classes>
+			<class name="org.rakuten.test.UpdateInventoryAPITest">
+			</class>
+		</classes>
+	</test>
+</suite>

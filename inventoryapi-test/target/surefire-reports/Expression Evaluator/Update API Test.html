@@ -1,0 +1,271 @@
+<html>
+<head>
+<title>TestNG:  Update API Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Update API Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Aug 27 03:42:41 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>2 seconds (2921 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.rakuten.test.UpdateInventoryAPITest.testFor30Shops()'><b>testFor30Shops</b><br>Test class: org.rakuten.test.UpdateInventoryAPITest<br>Test method: This method will pass update request for exact 30 shops, api should give be successful<br>Parameters: 4<br/>
+<a href="#Output-640456167" onClick='toggleBox("Output-640456167", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-640456167" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-640456167">
+Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C1,inventory={sku-A=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true], sku-B=Inventory [quantity=0,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C2,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C3,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C4,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C5,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C6,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C7,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C8,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C9,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C10,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C11,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C12,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C13,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C14,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-15,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-16,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C17,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C18,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C19,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C20,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C21,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C22,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-23,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-24,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C25,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C26,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C27,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C12,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C28,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C29,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C30,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}]]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.rakuten.test.UpdateInventoryAPITest@254d2ed9</td></tr>
+<tr>
+<td title='org.rakuten.test.UpdateInventoryAPITest.testForInvalidRequest()'><b>testForInvalidRequest</b><br>Test class: org.rakuten.test.UpdateInventoryAPITest<br>Test method: This method will pass update request which is invalid according to validation rule<br>Parameters: 7<br/>
+<a href="#Output-233480045" onClick='toggleBox("Output-233480045", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-233480045" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-233480045">
+Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=e,shopUrl=shop-acd,inventory={sku-A=Inventory [quantity=-1,returnProductsToInventoryOnCancelOrder=true], sku-CXB=Inventory [quantity=110,returnProductsToInventoryOnCancelOrder=false]}]]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.rakuten.test.UpdateInventoryAPITest@254d2ed9</td></tr>
+<tr>
+<td title='org.rakuten.test.UpdateInventoryAPITest.testForInvalidRequest()'><b>testForInvalidRequest</b><br>Test class: org.rakuten.test.UpdateInventoryAPITest<br>Test method: This method will pass update request which is invalid according to validation rule<br>Parameters: 8<br/>
+<a href="#Output-678478374" onClick='toggleBox("Output-678478374", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-678478374" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-678478374">
+Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=ebwrtd3scsesd,shopUrl=shop-acd,inventory={sku-A=Inventory [quantity=-1,returnProductsToInventoryOnCancelOrder=true], sku-CXB=Inventory [quantity=110,returnProductsToInventoryOnCancelOrder=false]}]]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.rakuten.test.UpdateInventoryAPITest@254d2ed9</td></tr>
+<tr>
+<td title='org.rakuten.test.UpdateInventoryAPITest.testForInvalidRequest()'><b>testForInvalidRequest</b><br>Test class: org.rakuten.test.UpdateInventoryAPITest<br>Test method: This method will pass update request which is invalid according to validation rule<br>Parameters: 9<br/>
+<a href="#Output-1954964395" onClick='toggleBox("Output-1954964395", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1954964395" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1954964395">
+Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=ebwrtd3-csesd,shopUrl=shop-acd,inventory={sku-A=Inventory [quantity=-1,returnProductsToInventoryOnCancelOrder=true], sku-CXB=Inventory [quantity=110,returnProductsToInventoryOnCancelOrder=false]}]]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.rakuten.test.UpdateInventoryAPITest@254d2ed9</td></tr>
+<tr>
+<td title='org.rakuten.test.UpdateInventoryAPITest.testForInvalidRequest()'><b>testForInvalidRequest</b><br>Test class: org.rakuten.test.UpdateInventoryAPITest<br>Test method: This method will pass update request which is invalid according to validation rule<br>Parameters: 10<br/>
+<a href="#Output-827271124" onClick='toggleBox("Output-827271124", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-827271124" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-827271124">
+Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=ebwrtd3-csesd,shopUrl=null,inventory={sku-A=Inventory [quantity=-1,returnProductsToInventoryOnCancelOrder=true], sku-CXB=Inventory [quantity=110,returnProductsToInventoryOnCancelOrder=false]}]]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.rakuten.test.UpdateInventoryAPITest@254d2ed9</td></tr>
+<tr>
+<td title='org.rakuten.test.UpdateInventoryAPITest.testForInvalidRequest()'><b>testForInvalidRequest</b><br>Test class: org.rakuten.test.UpdateInventoryAPITest<br>Test method: This method will pass update request which is invalid according to validation rule<br>Parameters: 11<br/>
+<a href="#Output-1207668916" onClick='toggleBox("Output-1207668916", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1207668916" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1207668916">
+Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=ebwrtd3-csesd,shopUrl=shop-acdertyuiopasdfghjklzxcvbnmpoiuytrewqasdfghjkl,inventory={sku-A=Inventory [quantity=-1,returnProductsToInventoryOnCancelOrder=true], sku-CXB=Inventory [quantity=110,returnProductsToInventoryOnCancelOrder=false]}]]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.rakuten.test.UpdateInventoryAPITest@254d2ed9</td></tr>
+<tr>
+<td title='org.rakuten.test.UpdateInventoryAPITest.testForInvalidRequest()'><b>testForInvalidRequest</b><br>Test class: org.rakuten.test.UpdateInventoryAPITest<br>Test method: This method will pass update request which is invalid according to validation rule<br>Parameters: 12<br/>
+<a href="#Output-1679268254" onClick='toggleBox("Output-1679268254", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1679268254" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1679268254">
+Request : null<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.rakuten.test.UpdateInventoryAPITest@254d2ed9</td></tr>
+<tr>
+<td title='org.rakuten.test.UpdateInventoryAPITest.testForInvalidRequest()'><b>testForInvalidRequest</b><br>Test class: org.rakuten.test.UpdateInventoryAPITest<br>Test method: This method will pass update request which is invalid according to validation rule<br>Parameters: 13<br/>
+<a href="#Output-1520640277" onClick='toggleBox("Output-1520640277", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1520640277" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1520640277">
+Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=null,shopUrl=shop-ACD,inventory={sku-A=Inventory [quantity=-1,returnProductsToInventoryOnCancelOrder=true], sku-CXB=Inventory [quantity=110,returnProductsToInventoryOnCancelOrder=false]}]]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.rakuten.test.UpdateInventoryAPITest@254d2ed9</td></tr>
+<tr>
+<td title='org.rakuten.test.UpdateInventoryAPITest.testForInvalidRequest()'><b>testForInvalidRequest</b><br>Test class: org.rakuten.test.UpdateInventoryAPITest<br>Test method: This method will pass update request which is invalid according to validation rule<br>Parameters: 14<br/>
+<a href="#Output-968575458" onClick='toggleBox("Output-968575458", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-968575458" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-968575458">
+Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=ebwrtd3-csesd,shopUrl=shop-ACD,inventory=null]]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.rakuten.test.UpdateInventoryAPITest@254d2ed9</td></tr>
+<tr>
+<td title='org.rakuten.test.UpdateInventoryAPITest.testForInvalidRequest()'><b>testForInvalidRequest</b><br>Test class: org.rakuten.test.UpdateInventoryAPITest<br>Test method: This method will pass update request which is invalid according to validation rule<br>Parameters: 15<br/>
+<a href="#Output-490639739" onClick='toggleBox("Output-490639739", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-490639739" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-490639739">
+Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=es,shopUrl=shop-a,inventory={sku-A=Inventory [quantity=-1,returnProductsToInventoryOnCancelOrder=true], sku-b=Inventory [quantity=1000000000,returnProductsToInventoryOnCancelOrder=false]}]]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.rakuten.test.UpdateInventoryAPITest@254d2ed9</td></tr>
+<tr>
+<td title='org.rakuten.test.UpdateInventoryAPITest.testForMoreThan1000SkusPerShops()'><b>testForMoreThan1000SkusPerShops</b><br>Test class: org.rakuten.test.UpdateInventoryAPITest<br>Test method: This method will pass update request for more than 1000 uniq skus for a shops<br>Parameters: 50<br/>
+<a href="#Output-499421321" onClick='toggleBox("Output-499421321", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-499421321" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-499421321">
+Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}]]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.rakuten.test.UpdateInventoryAPITest@254d2ed9</td></tr>
+<tr>
+<td title='org.rakuten.test.UpdateInventoryAPITest.testForMoreThan30Shops()'><b>testForMoreThan30Shops</b><br>Test class: org.rakuten.test.UpdateInventoryAPITest<br>Test method: This method will pass update request for more than 30 shops, api should give error<br>Parameters: 5<br/>
+<a href="#Output-243591166" onClick='toggleBox("Output-243591166", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-243591166" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-243591166">
+Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c1,inventory={sku-A=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true], sku-B=Inventory [quantity=0,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c2,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c3,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c4,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c5,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c6,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c7,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c8,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c9,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c10,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c11,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c12,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c13,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c14,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-15,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-16,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c17,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c18,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c19,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c20,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c21,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c22,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-23,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-24,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c25,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c26,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c27,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c12,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c28,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c29,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c30,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c31,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}]]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.rakuten.test.UpdateInventoryAPITest@254d2ed9</td></tr>
+<tr>
+<td title='org.rakuten.test.UpdateInventoryAPITest.testForQuantityInGreaterThanAllowed()'><b>testForQuantityInGreaterThanAllowed</b><br>Test class: org.rakuten.test.UpdateInventoryAPITest<br>Test method: This method will pass update request which contain quantity of some sku in range and for some sku out of range<br>Parameters: 6<br/>
+<a href="#Output-1169989631" onClick='toggleBox("Output-1169989631", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1169989631" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1169989631">
+Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=es,shopUrl=shop-a,inventory={sku-A=Inventory [quantity=-1,returnProductsToInventoryOnCancelOrder=true], sku-b=Inventory [quantity=1000000000,returnProductsToInventoryOnCancelOrder=false]}]]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.rakuten.test.UpdateInventoryAPITest@254d2ed9</td></tr>
+<tr>
+<td title='org.rakuten.test.UpdateInventoryAPITest.testUpdatesForValidAndInvalidRequest()'><b>testUpdatesForValidAndInvalidRequest</b><br>Test class: org.rakuten.test.UpdateInventoryAPITest<br>Test method: This method will pass update request for multiple shops in which some are valid and some or invalid<br>Parameters: 3<br/>
+<a href="#Output-825780811" onClick='toggleBox("Output-825780811", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-825780811" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-825780811">
+Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c,inventory={sku-A=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true], sku-B=Inventory [quantity=0,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-d,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}]]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.rakuten.test.UpdateInventoryAPITest@254d2ed9</td></tr>
+<tr>
+<td title='org.rakuten.test.UpdateInventoryAPITest.testValidUpdatesForMultipleShop()'><b>testValidUpdatesForMultipleShop</b><br>Test class: org.rakuten.test.UpdateInventoryAPITest<br>Test method: This method will pass update request for multiple shops in a request<br>Parameters: 2<br/>
+<a href="#Output-825931072" onClick='toggleBox("Output-825931072", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-825931072" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-825931072">
+Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=es,shopUrl=shop-A,inventory={sku-A=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true], sku-B=Inventory [quantity=110,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-b,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}]]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.rakuten.test.UpdateInventoryAPITest@254d2ed9</td></tr>
+<tr>
+<td title='org.rakuten.test.UpdateInventoryAPITest.testValidUpdatesForSingleShop()'><b>testValidUpdatesForSingleShop</b><br>Test class: org.rakuten.test.UpdateInventoryAPITest<br>Test method: This method will pass update request for only one shop in a request<br>Parameters: 1<br/>
+<a href="#Output-1083437983" onClick='toggleBox("Output-1083437983", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1083437983" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1083437983">
+Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=es,shopUrl=shop-a,inventory={sku-A=Inventory [quantity=-1,returnProductsToInventoryOnCancelOrder=true], sku-b=Inventory [quantity=110,returnProductsToInventoryOnCancelOrder=false]}]]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.rakuten.test.UpdateInventoryAPITest@254d2ed9</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Expression_Evaluator">
+              <span class="suite-name border-passed">Expression Evaluator</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Expression_Evaluator">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Expression_Evaluator">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Expression_Evaluator">
+                    <span>4 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Expression_Evaluator">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Expression_Evaluator">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Expression_Evaluator">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Expression_Evaluator">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">21 methods,   21 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Expression_Evaluator" class="hide-methods passed suite-Expression_Evaluator"> (hide)</a> <!-- hide-methods passed suite-Expression_Evaluator -->
+                      <a href="#" panel-name="suite-Expression_Evaluator" class="show-methods passed suite-Expression_Evaluator"> (show)</a> <!-- show-methods passed suite-Expression_Evaluator -->
+                    </span>
+                    <div class="method-list-content passed suite-Expression_Evaluator">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.UpdateInventoryAPITest" hash-for-method="testFor30Shops(4)">testFor30Shops(4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.GetInventoryAPITest" hash-for-method="testForBaseSkus(1)">testForBaseSkus(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.UpdateInventoryAPITest" hash-for-method="testForInvalidRequest(10)">testForInvalidRequest(10)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.UpdateInventoryAPITest" hash-for-method="testForInvalidRequest(14)">testForInvalidRequest(14)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.UpdateInventoryAPITest" hash-for-method="testForInvalidRequest(12)">testForInvalidRequest(12)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.UpdateInventoryAPITest" hash-for-method="testForInvalidRequest(13)">testForInvalidRequest(13)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.UpdateInventoryAPITest" hash-for-method="testForInvalidRequest(9)">testForInvalidRequest(9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.UpdateInventoryAPITest" hash-for-method="testForInvalidRequest(7)">testForInvalidRequest(7)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.UpdateInventoryAPITest" hash-for-method="testForInvalidRequest(15)">testForInvalidRequest(15)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.UpdateInventoryAPITest" hash-for-method="testForInvalidRequest(8)">testForInvalidRequest(8)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.UpdateInventoryAPITest" hash-for-method="testForInvalidRequest(11)">testForInvalidRequest(11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.UpdateInventoryAPITest" hash-for-method="testForMoreThan1000SkusPerShops(50)">testForMoreThan1000SkusPerShops(50)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.UpdateInventoryAPITest" hash-for-method="testForMoreThan30Shops(5)">testForMoreThan30Shops(5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.GetInventoryAPITest" hash-for-method="testForNonExistingProductsForBaseSkus(4)">testForNonExistingProductsForBaseSkus(4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.GetInventoryAPITest" hash-for-method="testForNonExistingProductsForSkus(5)">testForNonExistingProductsForSkus(5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.UpdateInventoryAPITest" hash-for-method="testForQuantityInGreaterThanAllowed(6)">testForQuantityInGreaterThanAllowed(6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.GetInventoryAPITest" hash-for-method="testForSkus(2)">testForSkus(2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.GetInventoryAPITest" hash-for-method="testInvalidRequest(3)">testInvalidRequest(3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.UpdateInventoryAPITest" hash-for-method="testUpdatesForValidAndInvalidRequest(3)">testUpdatesForValidAndInvalidRequest(3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.UpdateInventoryAPITest" hash-for-method="testValidUpdatesForMultipleShop(2)">testValidUpdatesForMultipleShop(2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Expression_Evaluator" title="org.rakuten.test.UpdateInventoryAPITest" hash-for-method="testValidUpdatesForSingleShop(1)">testValidUpdatesForSingleShop(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Expression_Evaluator -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Expression_Evaluator" class="panel Expression_Evaluator">
+          <div class="suite-Expression_Evaluator-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.rakuten.test.GetInventoryAPITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForBaseSkus(1)">
+                  </a> <!-- testForBaseSkus(1) -->
+                  <span class="method-name">testForBaseSkus</span>
+                  <span class="parameters">(1)</span>
+                  <em>
+(This method will if getInventory api contain baseSkus in query string)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForNonExistingProductsForBaseSkus(4)">
+                  </a> <!-- testForNonExistingProductsForBaseSkus(4) -->
+                  <span class="method-name">testForNonExistingProductsForBaseSkus</span>
+                  <span class="parameters">(4)</span>
+                  <em>
+(This method will pass baseSku parameters for which productds do not exists)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForNonExistingProductsForSkus(5)">
+                  </a> <!-- testForNonExistingProductsForSkus(5) -->
+                  <span class="method-name">testForNonExistingProductsForSkus</span>
+                  <span class="parameters">(5)</span>
+                  <em>
+(This method will pass skus parameters for which productds do not exists)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForSkus(2)">
+                  </a> <!-- testForSkus(2) -->
+                  <span class="method-name">testForSkus</span>
+                  <span class="parameters">(2)</span>
+                  <em>
+(This method will if getInventory api contain skus in query string)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidRequest(3)">
+                  </a> <!-- testInvalidRequest(3) -->
+                  <span class="method-name">testInvalidRequest</span>
+                  <span class="parameters">(3)</span>
+                  <em>
+(This method will pass parameters which make request invalid)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Expression_Evaluator-class-passed -->
+          <div class="suite-Expression_Evaluator-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.rakuten.test.UpdateInventoryAPITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFor30Shops(4)">
+                  </a> <!-- testFor30Shops(4) -->
+                  <span class="method-name">testFor30Shops</span>
+                  <span class="parameters">(4)</span>
+                  <em>
+(This method will pass update request for exact 30 shops, api should give be successful)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForInvalidRequest(10)">
+                  </a> <!-- testForInvalidRequest(10) -->
+                  <span class="method-name">testForInvalidRequest</span>
+                  <span class="parameters">(10)</span>
+                  <em>
+(This method will pass update request which is invalid according to validation rule)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForInvalidRequest(14)">
+                  </a> <!-- testForInvalidRequest(14) -->
+                  <span class="method-name">testForInvalidRequest</span>
+                  <span class="parameters">(14)</span>
+                  <em>
+(This method will pass update request which is invalid according to validation rule)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForInvalidRequest(12)">
+                  </a> <!-- testForInvalidRequest(12) -->
+                  <span class="method-name">testForInvalidRequest</span>
+                  <span class="parameters">(12)</span>
+                  <em>
+(This method will pass update request which is invalid according to validation rule)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForInvalidRequest(13)">
+                  </a> <!-- testForInvalidRequest(13) -->
+                  <span class="method-name">testForInvalidRequest</span>
+                  <span class="parameters">(13)</span>
+                  <em>
+(This method will pass update request which is invalid according to validation rule)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForInvalidRequest(9)">
+                  </a> <!-- testForInvalidRequest(9) -->
+                  <span class="method-name">testForInvalidRequest</span>
+                  <span class="parameters">(9)</span>
+                  <em>
+(This method will pass update request which is invalid according to validation rule)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForInvalidRequest(7)">
+                  </a> <!-- testForInvalidRequest(7) -->
+                  <span class="method-name">testForInvalidRequest</span>
+                  <span class="parameters">(7)</span>
+                  <em>
+(This method will pass update request which is invalid according to validation rule)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForInvalidRequest(15)">
+                  </a> <!-- testForInvalidRequest(15) -->
+                  <span class="method-name">testForInvalidRequest</span>
+                  <span class="parameters">(15)</span>
+                  <em>
+(This method will pass update request which is invalid according to validation rule)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForInvalidRequest(8)">
+                  </a> <!-- testForInvalidRequest(8) -->
+                  <span class="method-name">testForInvalidRequest</span>
+                  <span class="parameters">(8)</span>
+                  <em>
+(This method will pass update request which is invalid according to validation rule)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForInvalidRequest(11)">
+                  </a> <!-- testForInvalidRequest(11) -->
+                  <span class="method-name">testForInvalidRequest</span>
+                  <span class="parameters">(11)</span>
+                  <em>
+(This method will pass update request which is invalid according to validation rule)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForMoreThan1000SkusPerShops(50)">
+                  </a> <!-- testForMoreThan1000SkusPerShops(50) -->
+                  <span class="method-name">testForMoreThan1000SkusPerShops</span>
+                  <span class="parameters">(50)</span>
+                  <em>
+(This method will pass update request for more than 1000 uniq skus for a shops)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForMoreThan30Shops(5)">
+                  </a> <!-- testForMoreThan30Shops(5) -->
+                  <span class="method-name">testForMoreThan30Shops</span>
+                  <span class="parameters">(5)</span>
+                  <em>
+(This method will pass update request for more than 30 shops, api should give error)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForQuantityInGreaterThanAllowed(6)">
+                  </a> <!-- testForQuantityInGreaterThanAllowed(6) -->
+                  <span class="method-name">testForQuantityInGreaterThanAllowed</span>
+                  <span class="parameters">(6)</span>
+                  <em>
+(This method will pass update request which contain quantity of some sku in range and for some sku out of range)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdatesForValidAndInvalidRequest(3)">
+                  </a> <!-- testUpdatesForValidAndInvalidRequest(3) -->
+                  <span class="method-name">testUpdatesForValidAndInvalidRequest</span>
+                  <span class="parameters">(3)</span>
+                  <em>
+(This method will pass update request for multiple shops in which some are valid and some or invalid)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidUpdatesForMultipleShop(2)">
+                  </a> <!-- testValidUpdatesForMultipleShop(2) -->
+                  <span class="method-name">testValidUpdatesForMultipleShop</span>
+                  <span class="parameters">(2)</span>
+                  <em>
+(This method will pass update request for multiple shops in a request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidUpdatesForSingleShop(1)">
+                  </a> <!-- testValidUpdatesForSingleShop(1) -->
+                  <span class="method-name">testValidUpdatesForSingleShop</span>
+                  <span class="parameters">(1)</span>
+                  <em>
+(This method will pass update request for only one shop in a request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Expression_Evaluator-class-passed -->
+        </div> <!-- panel Expression_Evaluator -->
+        <div panel-name="test-xml-Expression_Evaluator" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/kishan/Desktop/Work/Automation/inventoryapi-test/src/main/resources/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Expression Evaluator&quot;&gt;
+  &lt;test name=&quot;Get Api Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.rakuten.test.GetInventoryAPITest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Get Api Test --&gt;
+  &lt;test name=&quot;Update API Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.rakuten.test.UpdateInventoryAPITest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Update API Test --&gt;
+&lt;/suite&gt; &lt;!-- Expression Evaluator --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Expression_Evaluator" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Expression Evaluator</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Get Api Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Update API Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Expression_Evaluator" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Expression Evaluator</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">negative</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testForInvalidRequest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testForMoreThan1000SkusPerShops</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testForMoreThan30Shops</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testForNonExistingProductsForBaseSkus</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testForNonExistingProductsForSkus</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInvalidRequest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">positive</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testFor30Shops</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testForBaseSkus</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testForSkus</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testUpdatesForValidAndInvalidRequest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testValidUpdatesForMultipleShop</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testValidUpdatesForSingleShop</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">post</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testForQuantityInGreaterThanAllowed</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testForBaseSkus</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testForSkus</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testValidUpdatesForSingleShop</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Expression_Evaluator" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Expression Evaluator</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Expression_Evaluator');
+function tableData_Expression_Evaluator() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(21);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testForBaseSkus')
+data.setCell(0, 2, 'org.rakuten.test.GetInventoryAPITest')
+data.setCell(0, 3, 2648);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testFor30Shops')
+data.setCell(1, 2, 'org.rakuten.test.UpdateInventoryAPITest')
+data.setCell(1, 3, 647);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testForMoreThan1000SkusPerShops')
+data.setCell(2, 2, 'org.rakuten.test.UpdateInventoryAPITest')
+data.setCell(2, 3, 264);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testForInvalidRequest')
+data.setCell(3, 2, 'org.rakuten.test.UpdateInventoryAPITest')
+data.setCell(3, 3, 209);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testForNonExistingProductsForSkus')
+data.setCell(4, 2, 'org.rakuten.test.GetInventoryAPITest')
+data.setCell(4, 3, 195);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testForNonExistingProductsForBaseSkus')
+data.setCell(5, 2, 'org.rakuten.test.GetInventoryAPITest')
+data.setCell(5, 3, 186);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testForSkus')
+data.setCell(6, 2, 'org.rakuten.test.GetInventoryAPITest')
+data.setCell(6, 3, 176);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testForInvalidRequest')
+data.setCell(7, 2, 'org.rakuten.test.UpdateInventoryAPITest')
+data.setCell(7, 3, 172);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testForInvalidRequest')
+data.setCell(8, 2, 'org.rakuten.test.UpdateInventoryAPITest')
+data.setCell(8, 3, 151);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testForInvalidRequest')
+data.setCell(9, 2, 'org.rakuten.test.UpdateInventoryAPITest')
+data.setCell(9, 3, 141);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testForInvalidRequest')
+data.setCell(10, 2, 'org.rakuten.test.UpdateInventoryAPITest')
+data.setCell(10, 3, 135);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testInvalidRequest')
+data.setCell(11, 2, 'org.rakuten.test.GetInventoryAPITest')
+data.setCell(11, 3, 133);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testForInvalidRequest')
+data.setCell(12, 2, 'org.rakuten.test.UpdateInventoryAPITest')
+data.setCell(12, 3, 125);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testForMoreThan30Shops')
+data.setCell(13, 2, 'org.rakuten.test.UpdateInventoryAPITest')
+data.setCell(13, 3, 124);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testForInvalidRequest')
+data.setCell(14, 2, 'org.rakuten.test.UpdateInventoryAPITest')
+data.setCell(14, 3, 119);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testForInvalidRequest')
+data.setCell(15, 2, 'org.rakuten.test.UpdateInventoryAPITest')
+data.setCell(15, 3, 109);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testValidUpdatesForMultipleShop')
+data.setCell(16, 2, 'org.rakuten.test.UpdateInventoryAPITest')
+data.setCell(16, 3, 105);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testUpdatesForValidAndInvalidRequest')
+data.setCell(17, 2, 'org.rakuten.test.UpdateInventoryAPITest')
+data.setCell(17, 3, 103);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testValidUpdatesForSingleShop')
+data.setCell(18, 2, 'org.rakuten.test.UpdateInventoryAPITest')
+data.setCell(18, 3, 93);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testForQuantityInGreaterThanAllowed')
+data.setCell(19, 2, 'org.rakuten.test.UpdateInventoryAPITest')
+data.setCell(19, 3, 89);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testForInvalidRequest')
+data.setCell(20, 2, 'org.rakuten.test.UpdateInventoryAPITest')
+data.setCell(20, 3, 83);
+window.suiteTableData['Expression_Evaluator']= { tableData: data, tableDiv: 'times-div-Expression_Evaluator'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <div id="times-div-Expression_Evaluator">
+              </div> <!-- times-div-Expression_Evaluator -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Expression_Evaluator" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Expression Evaluator</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testForNonExistingProductsForSkus(5)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request Parameters : {shopURL=[shop-A], skus=[product-sku-Y, product-sku-X], marketplaceIdentifier=[es]}</span>
+                <span class="reporter-method-output">Actual Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-sku-X and product-sku-Y does not exist,longMessage=baseSku product-sku-X and product-sku-Y does not exist in the shopURL shop  A of marketplace es]],products=null,totalCount=0]</span>
+                <span class="reporter-method-output">Expected Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-sku-X and product-sku-Y does not exist,longMessage=baseSku product-sku-X and product-sku-Y does not exist in the shopURL shop  A of marketplace es]],products=null,totalCount=0]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testForBaseSkus(1)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request Parameters : {shopURL=[shop-A], baseSkus=[product-baseSku-C, product-baseSku-B, product-baseSku-A], marketplaceIdentifier=[es]}</span>
+                <span class="reporter-method-output">Actual Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-baseSku-C does not exist,longMessage=baseSku product-baseSku-C does not exist in the shopURL shop  A of marketplace es]],products=[Products [baseSku=product-baseSku-A,variants=[Variants [sku=product-baseSku-A,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]], Products [baseSku=product-baseSku-B,variants=[Variants [sku=product-sku-B-1,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]], Variants [sku=product-sku-B-2,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]]],totalCount=2]</span>
+                <span class="reporter-method-output">Expected Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-baseSku-C does not exist,longMessage=baseSku product-baseSku-C does not exist in the shopURL shop  A of marketplace es]],products=[Products [baseSku=product-baseSku-A,variants=[Variants [sku=product-baseSku-A,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]], Products [baseSku=product-baseSku-B,variants=[Variants [sku=product-sku-B-1,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]], Variants [sku=product-sku-B-2,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]]],totalCount=2]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidRequest(3)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request Parameters : {shopURL=[shop-A], baseSkus=[product-baseSku-C, product-baseSku-A], skus=[product-Sku-A, product-Sku-B, product-Sku-C], marketplaceIdentifier=[es]}</span>
+                <span class="reporter-method-output">Actual Response : GetInventoryResponse [errors=[Errors [errorCode=801,shortMessage=baseSku and sku are not allowed,longMessage=both baseSku and sku are not allowed in request]],products=null,totalCount=0]</span>
+                <span class="reporter-method-output">Expected Response : GetInventoryResponse [errors=[Errors [errorCode=801,shortMessage=baseSku and sku are not allowed,longMessage=both baseSku and sku are not allowed in request]],products=null,totalCount=0]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testForSkus(2)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request Parameters : {shopURL=[shop-A], skus=[product-Sku-A, product-Sku-B, product-Sku-C], marketplaceIdentifier=[es]}</span>
+                <span class="reporter-method-output">Actual Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-baseSku-C does not exist,longMessage=baseSku product-baseSku-C does not exist in the shopURL shop  A of marketplace es]],products=[Products [baseSku=product-baseSku-A,variants=[Variants [sku=sku-A,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]], Products [baseSku=product-baseSku-C,variants=[Variants [sku=sku-A,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]], Variants [sku=sku-B,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]]],totalCount=2]</span>
+                <span class="reporter-method-output">Expected Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-baseSku-C does not exist,longMessage=baseSku product-baseSku-C does not exist in the shopURL shop  A of marketplace es]],products=[Products [baseSku=product-baseSku-A,variants=[Variants [sku=sku-A,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]], Products [baseSku=product-baseSku-C,variants=[Variants [sku=sku-A,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]], Variants [sku=sku-B,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]]],totalCount=2]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testForNonExistingProductsForBaseSkus(4)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request Parameters : {shopURL=[shop-A], baseSkus=[product-baseSku-Y, product-baseSku-X], marketplaceIdentifier=[es]}</span>
+                <span class="reporter-method-output">Actual Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-baseSku-X and product-baseSku-Y does not exist,longMessage=baseSku product-baseSku-X and product-baseSku-Y does not exist in the shopURL shop  A of marketplace es]],products=null,totalCount=0]</span>
+                <span class="reporter-method-output">Expected Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-baseSku-X and product-baseSku-Y does not exist,longMessage=baseSku product-baseSku-X and product-baseSku-Y does not exist in the shopURL shop  A of marketplace es]],products=null,totalCount=0]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testValidUpdatesForMultipleShop(2)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=es,shopUrl=shop-A,inventory={sku-A=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true], sku-B=Inventory [quantity=110,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-b,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}]]]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testForMoreThan1000SkusPerShops(50)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=ge,shopUrl=shop-abc,inventory={sku-123=Inventory [quantity=10,returnProductsToInventoryOnCancelOrder=false]}]]]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testForInvalidRequest(10)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=ebwrtd3-csesd,shopUrl=null,inventory={sku-A=Inventory [quantity=-1,returnProductsToInventoryOnCancelOrder=true], sku-CXB=Inventory [quantity=110,returnProductsToInventoryOnCancelOrder=false]}]]]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testForInvalidRequest(14)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=ebwrtd3-csesd,shopUrl=shop-ACD,inventory=null]]]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testUpdatesForValidAndInvalidRequest(3)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c,inventory={sku-A=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true], sku-B=Inventory [quantity=0,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-d,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}]]]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testForInvalidRequest(12)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request : null</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testForInvalidRequest(13)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=null,shopUrl=shop-ACD,inventory={sku-A=Inventory [quantity=-1,returnProductsToInventoryOnCancelOrder=true], sku-CXB=Inventory [quantity=110,returnProductsToInventoryOnCancelOrder=false]}]]]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testForInvalidRequest(9)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=ebwrtd3-csesd,shopUrl=shop-acd,inventory={sku-A=Inventory [quantity=-1,returnProductsToInventoryOnCancelOrder=true], sku-CXB=Inventory [quantity=110,returnProductsToInventoryOnCancelOrder=false]}]]]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testForInvalidRequest(7)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=e,shopUrl=shop-acd,inventory={sku-A=Inventory [quantity=-1,returnProductsToInventoryOnCancelOrder=true], sku-CXB=Inventory [quantity=110,returnProductsToInventoryOnCancelOrder=false]}]]]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testForInvalidRequest(15)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=es,shopUrl=shop-a,inventory={sku-A=Inventory [quantity=-1,returnProductsToInventoryOnCancelOrder=true], sku-b=Inventory [quantity=1000000000,returnProductsToInventoryOnCancelOrder=false]}]]]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testForMoreThan30Shops(5)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c1,inventory={sku-A=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true], sku-B=Inventory [quantity=0,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c2,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c3,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c4,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c5,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c6,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c7,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c8,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c9,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c10,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c11,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c12,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c13,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c14,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-15,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-16,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c17,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c18,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c19,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c20,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c21,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c22,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-23,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-24,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c25,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c26,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c27,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c12,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c28,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c29,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c30,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-c31,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}]]]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testValidUpdatesForSingleShop(1)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=es,shopUrl=shop-a,inventory={sku-A=Inventory [quantity=-1,returnProductsToInventoryOnCancelOrder=true], sku-b=Inventory [quantity=110,returnProductsToInventoryOnCancelOrder=false]}]]]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testFor30Shops(4)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C1,inventory={sku-A=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true], sku-B=Inventory [quantity=0,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C2,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C3,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C4,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C5,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C6,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C7,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C8,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C9,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C10,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C11,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C12,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C13,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C14,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-15,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-16,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C17,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C18,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C19,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C20,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C21,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C22,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-23,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-24,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C25,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C26,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C27,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C12,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C28,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C29,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}], ShopInventory [marketplaceIdentifier=es,shopUrl=shop-C30,inventory={sku-C=Inventory [quantity=200,returnProductsToInventoryOnCancelOrder=false]}]]]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testForInvalidRequest(8)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=ebwrtd3scsesd,shopUrl=shop-acd,inventory={sku-A=Inventory [quantity=-1,returnProductsToInventoryOnCancelOrder=true], sku-CXB=Inventory [quantity=110,returnProductsToInventoryOnCancelOrder=false]}]]]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testForQuantityInGreaterThanAllowed(6)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=es,shopUrl=shop-a,inventory={sku-A=Inventory [quantity=-1,returnProductsToInventoryOnCancelOrder=true], sku-b=Inventory [quantity=1000000000,returnProductsToInventoryOnCancelOrder=false]}]]]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testForInvalidRequest(11)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Request : UpdateInventoryRequest [shopInventory=[ShopInventory [marketplaceIdentifier=ebwrtd3-csesd,shopUrl=shop-acdertyuiopasdfghjklzxcvbnmpoiuytrewqasdfghjkl,inventory={sku-A=Inventory [quantity=-1,returnProductsToInventoryOnCancelOrder=true], sku-CXB=Inventory [quantity=110,returnProductsToInventoryOnCancelOrder=false]}]]]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Expression_Evaluator" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Expression_Evaluator" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.rakuten.test.UpdateInventoryAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.rakuten.test.GetInventoryAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">6870 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testForBaseSkus(1)</span>
+                <span class="method-start">9920 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testForNonExistingProductsForBaseSkus(4)</span>
+                <span class="method-start">12607 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testForNonExistingProductsForSkus(5)</span>
+                <span class="method-start">12805 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testForSkus(2)</span>
+                <span class="method-start">13012 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testInvalidRequest(3)</span>
+                <span class="method-start">13214 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.rakuten.test.UpdateInventoryAPITest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">BeforeTest</span>
+                <span class="method-start">13408 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">testFor30Shops(4)</span>
+                <span class="method-start">13595 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testForInvalidRequest(7)</span>
+                <span class="method-start">14247 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testForInvalidRequest(8)</span>
+                <span class="method-start">14456 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testForInvalidRequest(9)</span>
+                <span class="method-start">14629 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testForInvalidRequest(10)</span>
+                <span class="method-start">14780 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testForInvalidRequest(11)</span>
+                <span class="method-start">14916 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testForInvalidRequest(12)</span>
+                <span class="method-start">15057 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testForInvalidRequest(13)</span>
+                <span class="method-start">15177 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testForInvalidRequest(14)</span>
+                <span class="method-start">15261 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testForInvalidRequest(15)</span>
+                <span class="method-start">15386 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testForMoreThan1000SkusPerShops(50)</span>
+                <span class="method-start">15500 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testForMoreThan30Shops(5)</span>
+                <span class="method-start">15770 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testForQuantityInGreaterThanAllowed(6)</span>
+                <span class="method-start">15904 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdatesForValidAndInvalidRequest(3)</span>
+                <span class="method-start">16005 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testValidUpdatesForMultipleShop(2)</span>
+                <span class="method-start">16112 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testValidUpdatesForSingleShop(1)</span>
+                <span class="method-start">16235 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">16336 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

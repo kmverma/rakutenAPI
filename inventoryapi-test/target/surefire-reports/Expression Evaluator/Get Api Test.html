@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>TestNG:  Get Api Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Get Api Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Aug 27 03:42:34 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>6 seconds (6505 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.rakuten.test.GetInventoryAPITest.testForBaseSkus()'><b>testForBaseSkus</b><br>Test class: org.rakuten.test.GetInventoryAPITest<br>Test method: This method will if getInventory api contain baseSkus in query string<br>Parameters: 1<br/>
+<a href="#Output-570480340" onClick='toggleBox("Output-570480340", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-570480340" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-570480340">
+Request Parameters : {shopURL=[shop-A], baseSkus=[product-baseSku-C, product-baseSku-B, product-baseSku-A], marketplaceIdentifier=[es]}<br/>
+Actual Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-baseSku-C does not exist,longMessage=baseSku product-baseSku-C does not exist in the shopURL shop  A of marketplace es]],products=[Products [baseSku=product-baseSku-A,variants=[Variants [sku=product-baseSku-A,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]], Products [baseSku=product-baseSku-B,variants=[Variants [sku=product-sku-B-1,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]], Variants [sku=product-sku-B-2,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]]],totalCount=2]<br/>
+Expected Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-baseSku-C does not exist,longMessage=baseSku product-baseSku-C does not exist in the shopURL shop  A of marketplace es]],products=[Products [baseSku=product-baseSku-A,variants=[Variants [sku=product-baseSku-A,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]], Products [baseSku=product-baseSku-B,variants=[Variants [sku=product-sku-B-1,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]], Variants [sku=product-sku-B-2,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]]],totalCount=2]<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>org.rakuten.test.GetInventoryAPITest@51d6ba37</td></tr>
+<tr>
+<td title='org.rakuten.test.GetInventoryAPITest.testForNonExistingProductsForBaseSkus()'><b>testForNonExistingProductsForBaseSkus</b><br>Test class: org.rakuten.test.GetInventoryAPITest<br>Test method: This method will pass baseSku parameters for which productds do not exists<br>Parameters: 4<br/>
+<a href="#Output-1618803962" onClick='toggleBox("Output-1618803962", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1618803962" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1618803962">
+Request Parameters : {shopURL=[shop-A], baseSkus=[product-baseSku-Y, product-baseSku-X], marketplaceIdentifier=[es]}<br/>
+Actual Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-baseSku-X and product-baseSku-Y does not exist,longMessage=baseSku product-baseSku-X and product-baseSku-Y does not exist in the shopURL shop  A of marketplace es]],products=null,totalCount=0]<br/>
+Expected Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-baseSku-X and product-baseSku-Y does not exist,longMessage=baseSku product-baseSku-X and product-baseSku-Y does not exist in the shopURL shop  A of marketplace es]],products=null,totalCount=0]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.rakuten.test.GetInventoryAPITest@51d6ba37</td></tr>
+<tr>
+<td title='org.rakuten.test.GetInventoryAPITest.testForNonExistingProductsForSkus()'><b>testForNonExistingProductsForSkus</b><br>Test class: org.rakuten.test.GetInventoryAPITest<br>Test method: This method will pass skus parameters for which productds do not exists<br>Parameters: 5<br/>
+<a href="#Output-62200346" onClick='toggleBox("Output-62200346", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-62200346" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-62200346">
+Request Parameters : {shopURL=[shop-A], skus=[product-sku-Y, product-sku-X], marketplaceIdentifier=[es]}<br/>
+Actual Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-sku-X and product-sku-Y does not exist,longMessage=baseSku product-sku-X and product-sku-Y does not exist in the shopURL shop  A of marketplace es]],products=null,totalCount=0]<br/>
+Expected Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-sku-X and product-sku-Y does not exist,longMessage=baseSku product-sku-X and product-sku-Y does not exist in the shopURL shop  A of marketplace es]],products=null,totalCount=0]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.rakuten.test.GetInventoryAPITest@51d6ba37</td></tr>
+<tr>
+<td title='org.rakuten.test.GetInventoryAPITest.testForSkus()'><b>testForSkus</b><br>Test class: org.rakuten.test.GetInventoryAPITest<br>Test method: This method will if getInventory api contain skus in query string<br>Parameters: 2<br/>
+<a href="#Output-2011343558" onClick='toggleBox("Output-2011343558", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2011343558" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2011343558">
+Request Parameters : {shopURL=[shop-A], skus=[product-Sku-A, product-Sku-B, product-Sku-C], marketplaceIdentifier=[es]}<br/>
+Actual Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-baseSku-C does not exist,longMessage=baseSku product-baseSku-C does not exist in the shopURL shop  A of marketplace es]],products=[Products [baseSku=product-baseSku-A,variants=[Variants [sku=sku-A,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]], Products [baseSku=product-baseSku-C,variants=[Variants [sku=sku-A,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]], Variants [sku=sku-B,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]]],totalCount=2]<br/>
+Expected Response : GetInventoryResponse [errors=[Errors [errorCode=901,shortMessage=baseSku product-baseSku-C does not exist,longMessage=baseSku product-baseSku-C does not exist in the shopURL shop  A of marketplace es]],products=[Products [baseSku=product-baseSku-A,variants=[Variants [sku=sku-A,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]], Products [baseSku=product-baseSku-C,variants=[Variants [sku=sku-A,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]], Variants [sku=sku-B,variantListedShops=[VariantListedShops [marketPlaceIdentifier=es,shopUrl=shop-A,inventory=Inventory [quantity=100,returnProductsToInventoryOnCancelOrder=true]]]]]]],totalCount=2]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.rakuten.test.GetInventoryAPITest@51d6ba37</td></tr>
+<tr>
+<td title='org.rakuten.test.GetInventoryAPITest.testInvalidRequest()'><b>testInvalidRequest</b><br>Test class: org.rakuten.test.GetInventoryAPITest<br>Test method: This method will pass parameters which make request invalid<br>Parameters: 3<br/>
+<a href="#Output-1668187777" onClick='toggleBox("Output-1668187777", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1668187777" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1668187777">
+Request Parameters : {shopURL=[shop-A], baseSkus=[product-baseSku-C, product-baseSku-A], skus=[product-Sku-A, product-Sku-B, product-Sku-C], marketplaceIdentifier=[es]}<br/>
+Actual Response : GetInventoryResponse [errors=[Errors [errorCode=801,shortMessage=baseSku and sku are not allowed,longMessage=both baseSku and sku are not allowed in request]],products=null,totalCount=0]<br/>
+Expected Response : GetInventoryResponse [errors=[Errors [errorCode=801,shortMessage=baseSku and sku are not allowed,longMessage=both baseSku and sku are not allowed in request]],products=null,totalCount=0]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>org.rakuten.test.GetInventoryAPITest@51d6ba37</td></tr>
+</table><p>
+</body>
+</html>
