@@ -33,6 +33,9 @@ public class MockServer {
 
 	}
 
+	/**
+	 *  This method starts http mock server and proxy server on port specified in config file and throw Runtime Exception if fails to start server
+	 */
 	public void start(){	
 		try{
 			mockServer = startClientAndServer(Integer.parseInt(ConfigStore.getConfig(Constants.SERVER_PORT)));
@@ -44,6 +47,9 @@ public class MockServer {
 		}
 	}
 
+	/**
+	 *  It stops proxy server and http mock server
+	 */
 	public void stop(){
 		try{
 			proxy.stop();
@@ -53,6 +59,9 @@ public class MockServer {
 		}
 	}
 
+	/**
+	 * It listens HTTP request for inventory/get and passes call to specified handlers class after checking authentication token in request header and HTTP method GET
+	 */
 	public void mockGetInventory(){
 		HttpCallback httpCallback = new HttpCallback();
 		mockServer.when(new HttpRequest()
@@ -63,6 +72,9 @@ public class MockServer {
 				.withCallbackClass("org.rakuten.api.server.GetInventoryCallback"));
 	}
 
+	/**
+	 * It listens HTTP request for inventory/update and passes call to specified handlers class after checking authentication token in request header and HTTP method POST
+	 */
 	public void mockUpdateInventory(){
 		HttpCallback httpCallback = new HttpCallback();
 		mockServer.when(new HttpRequest()

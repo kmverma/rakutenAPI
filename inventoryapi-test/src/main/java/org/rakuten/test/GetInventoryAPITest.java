@@ -98,7 +98,10 @@ public class GetInventoryAPITest extends TestBase{
 		performTest(testCaseId);
 	}
 
-	
+	/**
+	 * @param testCaseId
+	 * This method perform all actual test, it makes call to web server to get actual response and generated expected response and assert response 
+	 */
 	private void performTest(int testCaseId){
 		TestData testData = requestResponseMap.get(testCaseId);
 		GetInventoryResponse response = apiService.getInventory(Util.getParametersFromJson(testData.getRequest()));

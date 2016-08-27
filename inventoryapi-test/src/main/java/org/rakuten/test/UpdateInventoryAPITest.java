@@ -16,6 +16,7 @@ import org.rakuten.util.ConfigStore;
 import org.rakuten.util.Constants;
 import org.rakuten.util.Util;
 import org.rakuten.util.XLSUtility;
+import org.testng.Reporter;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -149,13 +150,17 @@ public class UpdateInventoryAPITest extends TestBase{
 	}
 
 
+	/**
+	 * @param testCaseId
+	 * This method perform all actual test, it makes call to web server to get actual response and generated expected response and assert response 
+	 */
 	private void performTest(int testCaseId){
 		TestData testData = requestResponseMap.get(testCaseId);
 		UpdateInventoryResponse response = apiService.updateInventory((UpdateInventoryRequest) Util.serialize(testData.getRequest(), UpdateInventoryRequest.class));
 		UpdateInventoryResponse expectedResponse = (UpdateInventoryResponse) Util.serialize(testData.getResponse(), UpdateInventoryResponse.class);
 		SoftAssert assertion = new SoftAssert();
-		System.out.println("Actual Request "+response);
-		System.out.println("Expected  Request "+expectedResponse);
+		Reporter.log("Actual Request "+response);
+		Reporter.log("Expected  Request "+expectedResponse);
 		assertion.assertTrue(expectedResponse.equals(response));
 		assertion.assertAll();
 	}

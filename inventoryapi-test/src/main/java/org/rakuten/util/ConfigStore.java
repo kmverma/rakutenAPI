@@ -15,20 +15,30 @@ public class ConfigStore {
 
 	private static Properties properties;
 
-	public static String getConfig(String key){
-		if(properties == null){
+	/**
+	 * @param key
+	 * @return property value 
+	 * This method will be used to get config value for given keys, and before
+	 * getting key, it loads config if not loaded already 
+	 */
+	public static String getConfig(String key) {
+		if (properties == null) {
 			loadConfig();
 		}
-		return (String)properties.get(key);
+		return (String) properties.get(key);
 	}
 
-	private static void loadConfig(){
-		InputStream stream = Thread.currentThread().getContextClassLoader().getResourceAsStream(Constants.CONFIG);
+	/**
+	 * This method will load config from specified file exists in class path
+	 */
+	private static void loadConfig() {
+		InputStream stream = Thread.currentThread().getContextClassLoader()
+				.getResourceAsStream(Constants.CONFIG);
 		try {
 			properties = new Properties();
 			properties.load(stream);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	}	
+	}
 }

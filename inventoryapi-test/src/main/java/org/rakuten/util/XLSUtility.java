@@ -23,6 +23,15 @@ import org.rakuten.model.TestData;
 
 public class XLSUtility {
 
+	/**
+	 * @param file
+	 * @return map of testData 
+	 * 
+	 * This method take file name for test data and convert it into map of testCaseId and Object of testData
+	 * Excel file is expected to have at-least 3 columns else that row will be skipped, testCase id is supposed 
+	 * to be unique other wise test data will be overridden
+	 * This method will return null if file does not exists or if file does not contains any data row
+	 */
 	public Map<Integer,TestData> getTestData(String file){
 		Iterator<Row> rows = getSheetData(file);
 		DataFormatter fmt = new DataFormatter();
@@ -46,6 +55,12 @@ public class XLSUtility {
 		return testData;
 	}
 
+	/**
+	 * @param fileLocation
+	 * @return Iterator of Row
+	 * This method take file path as input and return iterator or rows, it will return null if file does not exists or its corrupted
+	 * 
+	 */
 	private Iterator<Row> getSheetData(String fileLocation){
 		File file = new File(fileLocation);
 		if(!file.exists())

@@ -37,6 +37,9 @@ public class UpdateInventoryCallback implements ExpectationCallback{
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see org.mockserver.mock.action.ExpectationCallback#handle(org.mockserver.model.HttpRequest)
+	 */
 	@Override
 	public HttpResponse handle(HttpRequest httpRequest) {
 		if (httpRequest.getPath().getValue().endsWith("/inventory/update")) {
@@ -45,6 +48,11 @@ public class UpdateInventoryCallback implements ExpectationCallback{
 			return null;
 	}
 
+	/**
+	 * @param httpRequest
+	 * @return HttpResponse
+	 * It take httpRequest as input and after processing return response for request of update inventory api 
+	 */
 	private HttpResponse getResponse(HttpRequest httpRequest){
 		HttpResponse httpResponse = new HttpResponse();
 		String body = httpRequest.getBodyAsString();

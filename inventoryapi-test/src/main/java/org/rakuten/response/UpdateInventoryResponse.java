@@ -18,27 +18,55 @@ public class UpdateInventoryResponse {
 	String operationStatus;
 	String operationType;
 	
+	/**
+	 * @return List<Errors>
+	 */
 	public List<Errors> getErrors() {
 		return errors;
 	}
+	
+	/**
+	 * @return String
+	 */
 	public String getOperationId() {
 		return operationId;
 	}
+	
+	/**
+	 * @return String
+	 */
 	public String getOperationStatus() {
 		return operationStatus;
 	}
+	
+	/**
+	 * @return String
+	 */
 	public String getOperationType() {
 		return operationType;
 	}
+	
+	/**
+	 * @param errors
+	 */
 	public void setErrors(List<Errors> errors) {
 		this.errors = errors;
 	}
+	/**
+	 * @param operationId
+	 */
 	public void setOperationId(String operationId) {
 		this.operationId = operationId;
 	}
+	/**
+	 * @param operationStatus
+	 */
 	public void setOperationStatus(String operationStatus) {
 		this.operationStatus = operationStatus;
 	}
+	/**
+	 * @param operationType
+	 */
 	public void setOperationType(String operationType) {
 		this.operationType = operationType;
 	}

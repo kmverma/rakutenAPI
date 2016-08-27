@@ -23,6 +23,11 @@ public class Util {
 
 	public static ObjectMapper mapper = new ObjectMapper();
 
+	/**
+	 * @param params
+	 * @return query string URl
+	 *  This method takes params and convert them into key value pair query string separated by & 
+	 */
 	public static String getUriFromParams(Map<String,Set<String>> params){
 		StringBuilder queryString = new StringBuilder();
 		if(params != null && params.size()>0){
@@ -39,16 +44,27 @@ public class Util {
 		return queryString.toString();
 	}
 
+	/**
+	 * @param json
+	 * @param className
+	 * @return Object of class specified as className
+	 * This method converts json string into object of given class and exception occurs if given string is not valid String 
+	 * or json is not serializable to given class and null is returned
+	 */
 	public static Object serialize(String json,Class<?> className){
 		try{
 			return mapper.readValue(json, className);
 		}catch(Exception e){
-			System.out.println(json);
 			e.printStackTrace();
 			return null;
 		}
 	}
 
+	/**
+	 * @param object
+	 * @return json String
+	 * This method takes Java class and convert it into json string and if exception occurs it returns null
+	 */
 	public static String deserialize(Object object){
 		try{
 			return mapper.writeValueAsString(object);
@@ -58,7 +74,13 @@ public class Util {
 		}
 	}
 
-	@SuppressWarnings("deprecation")
+
+	/**
+	 * @param request
+	 * @return params
+	 * 
+	 * This methods take Json string as input which is and covert it into Map 
+	 */
 	public static Map<String,Set<String>> getParametersFromJson(String request){
 		Map<String,Set<String>> data = new HashMap<>();
 		try {
@@ -75,7 +97,7 @@ public class Util {
 					while(itr.hasNext())
 						value.add(itr.next().asText());
 				}else {
-					value.add(next.getValue().getValueAsText());
+					value.add(next.getValue().asText());
 				}
 				data.put(key, value);
 			}

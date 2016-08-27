@@ -19,26 +19,44 @@ public class GetInventoryResponse {
 	String totalCount;
 	
 	
+	/**
+	 * @return List<Errors>
+	 */
 	public List<Errors> getErrors() {
 		return errors;
 	}
 
+	/**
+	 * @return List<Products>
+	 */
 	public List<Products> getProducts() {
 		return products;
 	}
 
+	/**
+	 * @return String
+	 */
 	public String getTotalCount() {
 		return totalCount;
 	}
 
+	/**
+	 * @param errors
+	 */
 	public void setErrors(List<Errors> errors) {
 		this.errors = errors;
 	}
 
+	/**
+	 * @param products
+	 */
 	public void setProducts(List<Products> products) {
 		this.products = products;
 	}
 
+	/**
+	 * @param totalCount
+	 */
 	public void setTotalCount(String totalCount) {
 		this.totalCount = totalCount;
 	}

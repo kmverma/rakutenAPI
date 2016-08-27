@@ -21,13 +21,9 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicHeader;
 import org.apache.http.util.EntityUtils;
 import org.rakuten.util.Constants;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 @SuppressWarnings("deprecation")
 public class HttpService {
-
-	private static final Logger LOG = LoggerFactory.getLogger(HttpService.class);
 
 	private CloseableHttpClient client;
 	private final CookieStore cookieStore = new BasicCookieStore();
@@ -36,6 +32,13 @@ public class HttpService {
 		client = new  DefaultHttpClient();
 	}
 
+	/**
+	 * @param uri
+	 * @param queryString
+	 * @return Json String
+	 * @throws URISyntaxException
+	 * This method take URI and query string as parameter and make http call for GET method and return response body
+	 */
 	public String get(String uri,String queryString) throws URISyntaxException {
 		URI url = new URI(uri+"?"+queryString);
 		HttpGet request = new HttpGet(url);
@@ -43,6 +46,13 @@ public class HttpService {
 		return getResponseContent(response);
 	}
 
+	/**
+	 * @param body
+	 * @param uri
+	 * @return String
+	 * @throws UnsupportedEncodingException
+	 * This method takes JSON input to use as request body and uri and execute POST http call and return response body
+	 */
 	public String post(String body,String uri) throws UnsupportedEncodingException {
 		HttpPost request = new HttpPost(uri);
 		HttpEntity entity = new StringEntity(body);
@@ -51,6 +61,11 @@ public class HttpService {
 		return getResponseContent(response);
 	}
 
+	/**
+	 * @param response
+	 * @return String
+	 * It consumes HttpResponse and return response body and null will be returned if response is null or body in response is null
+	 */
 	private String getResponseContent(HttpResponse response) {
 		String result = null;
 		try {
@@ -59,23 +74,25 @@ public class HttpService {
 			response.setEntity(bufferedHttpEntity);
 			return result;
 		} catch (IOException e) {
-			LOG.error("Error while Getting response body  ",e);
 			return result;
 		}
 	}
 
 	
+	/**
+	 * @param request
+	 * @return HttpResponse
+	 * This is final and thread safe method to make execute http call and returns response
+	 */
 	private final synchronized HttpResponse execute(HttpUriRequest request) {
 		request.addHeader(new BasicHeader(HttpHeaders.AUTHORIZATION, Constants.AUTHORIZATION_TOKEN));
 		HttpClientContext context = HttpClientContext.create();
 		context.setCookieStore(cookieStore);
 		HttpResponse response = null;
 		try {
-			LOG.debug("Performing HTTP Request : "+request);
 			response = client.execute(request, context);
-			LOG.debug("Response for Http Call : "+response);
 		} catch (IOException e) {
-			LOG.error("Got Exception while performing http call ",e);
+	
 		} 
 		return response;
 	}

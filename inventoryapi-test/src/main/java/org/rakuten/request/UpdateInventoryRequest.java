@@ -15,10 +15,16 @@ public class UpdateInventoryRequest {
 
 	List<ShopInventory> shopInventory;
 
+	/**
+	 * @return List<ShopInventory>
+	 */
 	public List<ShopInventory> getShopInventory() {
 		return shopInventory;
 	}
 
+	/**
+	 * @param shopInventory
+	 */
 	public void setShopInventory(List<ShopInventory> shopInventory) {
 		this.shopInventory = shopInventory;
 	}
@@ -57,6 +63,5 @@ public class UpdateInventoryRequest {
 				.append(shopInventory).append("]");
 		return builder.toString();
 	}
-	
-	
+
 }

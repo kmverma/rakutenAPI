@@ -15,7 +15,7 @@ git checkout master
 	3.2 change server port
 	3.3 change propxy server port
 
-4- run following command from root directory with pom.xml file to run test 
+4- run following command from inventoryapi-test directory inside project root directory which contains pom.xml file to run test 
 
  mvn clean test  -Dsuite=testng.xml
 

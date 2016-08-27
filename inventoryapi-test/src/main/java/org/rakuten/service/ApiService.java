@@ -30,6 +30,11 @@ public class ApiService {
 		httpService = new HttpService();
 	}
 
+	/**
+	 * @param request
+	 * @return UpdateInventoryResponse 
+	 * This method take object of UpdateInventoryRequest as input and make http call to web server for update api and return UpdateInventoryResponse as response
+	 */
 	public UpdateInventoryResponse updateInventory(UpdateInventoryRequest request){
 		String uri=endPoint+"inventory/update";
 		Reporter.log("Request : "+request);
@@ -43,6 +48,11 @@ public class ApiService {
 		return response;
 	}
 
+	/**
+	 * @param params
+	 * @return GetInventoryResponse
+	 * This method take object of request params  as input and make http call to web server for get api and return object of GetInventoryResponse as response
+	 */
 	public GetInventoryResponse getInventory(Map<String,Set<String>> params){
 		String uri=endPoint+"inventory/get";
 		Reporter.log("Request Parameters : "+params);

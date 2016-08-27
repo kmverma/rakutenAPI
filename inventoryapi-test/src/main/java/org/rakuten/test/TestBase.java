@@ -17,6 +17,9 @@ public class TestBase {
 	private static MockServer mockServer;
 	protected static ApiService apiService;
 
+	/**
+	 *  Before suite method to be executed before executing test to start mock server
+	 */
 	@BeforeSuite(alwaysRun=true)
 	public void beforeSuite(){
 		mockServer = MockServer.getInstance();
@@ -24,6 +27,9 @@ public class TestBase {
 		mockServer.start();
 	}
 
+	/**
+	 *  After suite method to be executed before executing test to stop mock server once all tests are executed
+	 */
 	@AfterSuite(alwaysRun=true)
 	public void afterSuite(){
 		mockServer.stop();
