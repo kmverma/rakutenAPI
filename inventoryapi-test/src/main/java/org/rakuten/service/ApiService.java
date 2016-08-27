@@ -37,7 +37,7 @@ public class ApiService {
 	 */
 	public UpdateInventoryResponse updateInventory(UpdateInventoryRequest request){
 		String uri=endPoint+"inventory/update";
-		Reporter.log("Request : "+request);
+		Reporter.log("\nRequest : "+request);
 		UpdateInventoryResponse response = null ;
 		try {
 			String responseBody = httpService.post(Util.deserialize(request), uri);
@@ -55,7 +55,7 @@ public class ApiService {
 	 */
 	public GetInventoryResponse getInventory(Map<String,Set<String>> params){
 		String uri=endPoint+"inventory/get";
-		Reporter.log("Request Parameters : "+params);
+		Reporter.log("\nRequest Parameters : "+params);
 		GetInventoryResponse response = null;
 		try {
 			String responseBody = httpService.get(uri,Util.getUriFromParams(params));

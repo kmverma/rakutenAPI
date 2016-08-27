@@ -106,8 +106,8 @@ public class GetInventoryAPITest extends TestBase{
 		TestData testData = requestResponseMap.get(testCaseId);
 		GetInventoryResponse response = apiService.getInventory(Util.getParametersFromJson(testData.getRequest()));
 		GetInventoryResponse expectedResponse = (GetInventoryResponse) Util.serialize(testData.getResponse(), GetInventoryResponse.class); 
-		Reporter.log("Actual Response : "+response);
-		Reporter.log("Expected Response : "+expectedResponse);
+		Reporter.log("\nActual Response : "+response);
+		Reporter.log("\nExpected Response : "+expectedResponse);
 		SoftAssert assertion = new SoftAssert();
 		assertion.assertNotNull(response);
 		assertion.assertTrue(expectedResponse.equals(response));

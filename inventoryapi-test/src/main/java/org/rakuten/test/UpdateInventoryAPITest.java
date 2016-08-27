@@ -159,8 +159,8 @@ public class UpdateInventoryAPITest extends TestBase{
 		UpdateInventoryResponse response = apiService.updateInventory((UpdateInventoryRequest) Util.serialize(testData.getRequest(), UpdateInventoryRequest.class));
 		UpdateInventoryResponse expectedResponse = (UpdateInventoryResponse) Util.serialize(testData.getResponse(), UpdateInventoryResponse.class);
 		SoftAssert assertion = new SoftAssert();
-		Reporter.log("Actual Request "+response);
-		Reporter.log("Expected  Request "+expectedResponse);
+		Reporter.log("\nActual Response : "+response);
+		Reporter.log("\nExpected  Response : "+expectedResponse);
 		assertion.assertTrue(expectedResponse.equals(response));
 		assertion.assertAll();
 	}
