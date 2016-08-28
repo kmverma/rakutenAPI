@@ -109,8 +109,8 @@ public class GetInventoryAPITest extends TestBase{
 		Reporter.log("\nActual Response : "+response);
 		Reporter.log("\nExpected Response : "+expectedResponse);
 		SoftAssert assertion = new SoftAssert();
-		assertion.assertNotNull(response);
-		assertion.assertTrue(expectedResponse.equals(response));
+		assertion.assertNotNull(response,"Actual response can not be null");
+		assertion.assertTrue(expectedResponse.equals(response),"Actual Response does not match with expected response");
 		assertion.assertAll();
 	}
 }

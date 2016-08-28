@@ -161,7 +161,7 @@ public class UpdateInventoryAPITest extends TestBase{
 		SoftAssert assertion = new SoftAssert();
 		Reporter.log("\nActual Response : "+response);
 		Reporter.log("\nExpected  Response : "+expectedResponse);
-		assertion.assertTrue(expectedResponse.equals(response));
+		assertion.assertTrue(expectedResponse.equals(response),"Actual Response does not match with expected response");
 		assertion.assertAll();
 	}
 
